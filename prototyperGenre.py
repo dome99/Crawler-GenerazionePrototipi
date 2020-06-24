@@ -48,31 +48,30 @@ for g in genres:
             if freq > 0.80:
                 numOfSongs[g][key] = str(freq) , ' - ' , attributes[key] , ' - ' , numOfSongs[g]['nums']
 
-print(numOfSongs)
-
-'''
-MAX_SCORE = 0.9
-MIN_SCORE = 0.6
-minFreq = 1
-maxFreq = 0
-
-for key in attributes:
-    freq = int(attributes[key]) / len(attributes)
-    minFreq = min(minFreq, freq)
-    maxFreq = max(maxFreq, freq)
-
-rangeFreq = maxFreq - minFreq
-rangeScore = MAX_SCORE - MIN_SCORE
-f = open("genres/" + g + ".txt", "w+")
+#print(numOfSongs)
 
 
-for key, value in sorted(genres[g].items(), key=lambda kv: kv[1], reverse=True):
-    freq = int(attributes[key]) / len(attributes)
+    MAX_SCORE = 0.9
+    MIN_SCORE = 0.6
+    minFreq = 1
+    maxFreq = 0
 
-    score = MAX_SCORE
-    if rangeFreq > 0:
-        score = MIN_SCORE + (rangeScore * (freq - minFreq) / rangeFreq)
-        writeWordInf(f, key, str(score))
+    for key in attributes:
+        freq = int(attributes[key]) / len(attributes)
+        minFreq = min(minFreq, freq)
+        maxFreq = max(maxFreq, freq)
 
-f.close()
-'''
+    rangeFreq = maxFreq - minFreq
+    rangeScore = MAX_SCORE - MIN_SCORE
+    f = open("genres/" + g + ".txt", "w+")
+
+
+    for key, value in sorted(genres[g].items(), key=lambda kv: kv[1], reverse=True):
+        freq = int(attributes[key]) / len(attributes)
+
+        score = MAX_SCORE
+        if rangeFreq > 0:
+            score = MIN_SCORE + (rangeScore * (freq - minFreq) / rangeFreq)
+            writeWordInf(f, key, str(score))
+
+    f.close()

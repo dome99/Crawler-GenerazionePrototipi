@@ -16,5 +16,5 @@ def execute_recommender():
 
 
 if __name__ == '__main__':
-    #execute_cocos()
-    execute_recommender()
+    execute_cocos()
+    #execute_recommender()
