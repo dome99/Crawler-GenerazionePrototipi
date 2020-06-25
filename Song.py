@@ -1,3 +1,5 @@
+# Classe di supporto per prototyperGenre.py
+
 import os
 
 

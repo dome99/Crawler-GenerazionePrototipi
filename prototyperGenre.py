@@ -1,6 +1,6 @@
-import json
-import os
+# Crea i prototipi per i generi musicali
 
+import json
 
 def writeWordInf(file, word, value):
     spaces = 35 - len(word) + 1

@@ -1,3 +1,7 @@
+# Estazione e raccolta dei dati relativi ai generi contenuti in urls.
+# Vengono raccolti tutti gli attributi delle canzoni per ogni genere e successivamente salvati in data.txt
+
+
 from bs4 import BeautifulSoup
 import requests
 import time
@@ -5,6 +9,7 @@ import json
 
 user_agent = {'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en_EN; rv:1.7.8) Gecko/20050511 Firefox/1.0.4'}
 
+#Lista dei generi di partenza di AllMusic
 urls = ["https://www.allmusic.com/genre/avant-garde-ma0000012170/songs",
         "https://www.allmusic.com/genre/blues-ma0000002467/songs",
         "https://www.allmusic.com/genre/childrens-ma0000002944/songs",

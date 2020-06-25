@@ -1,13 +1,12 @@
-import os.path
-from pprint import *
-
-
+# Codice recuperato da DENOTER
+#
 # Classe per il parsing dell'input da file
 # Per prima cosa salva tutte le linee del file su una lista
 # Toglie quelle di commento e quelle vuote
 # Salva in delle stringhe il titolo e i nomi del concetto head e modifier
 # Infine scandisce le linee rimanenti creando due liste,
-#   una con le proprietà tipiche e una con quelle forti
+# una con le proprietà tipiche e una con quelle forti
+
 class ReadAttributes:
 
     def __init__(self, path='Input'):

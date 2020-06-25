@@ -1,5 +1,7 @@
-import os
+# Classe recuperata da DENOTER e modificata
+#
 
+import os
 
 class Property:
     name = ""

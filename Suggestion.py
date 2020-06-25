@@ -1,6 +1,7 @@
-import json
-import os
+# Script utile al fine di aiutare per una eventuale scelta
+# degli attributi rigidi da inserire nei prototipi
 
+import json
 
 def writeWordInf(file, word, value):
     spaces = 35 - len(word) + 1
